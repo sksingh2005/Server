@@ -7,7 +7,7 @@
       - db
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://0.0.0.0:5000
+      - ASPNETCORE_URLS=http://+:5000
       - ConnectionStrings__DefaultConnection=Server=db;Database=TestDb;User Id=sa;Password=Sql@321#;TrustServerCertificate=True;
 
   db:
