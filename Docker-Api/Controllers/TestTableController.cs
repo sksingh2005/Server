@@ -21,5 +21,11 @@ namespace Docker_Api.Controllers
         {
             return await _context.TestTable.ToListAsync();
         }
+
+        [HttpGet("id/{id}")]
+        public async Task<ActionResult<TestTable>> Get(int id)
+        {
+            return await _context.TestTable.Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
     }
 }
