@@ -1,9 +1,6 @@
 ﻿services:
   api:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-      network: "host"
+    image: sayshank/api-server:latest
     ports:
       - "5000:5000"
     depends_on:
